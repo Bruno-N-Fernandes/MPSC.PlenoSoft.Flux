@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MPSC.PlenoSoft.ControlFlux", "ControlFlux\MPSC.PlenoSoft.ControlFlux.csproj", "{F19048B7-7B67-4EC1-80A7-1A97CEA67080}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPSC.PlenoSoft.ControlFlux.Tests", "ControlFlux.Tests\MPSC.PlenoSoft.ControlFlux.Tests.csproj", "{0270A106-1A5A-4E47-953C-983B52C4B49D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F19048B7-7B67-4EC1-80A7-1A97CEA67080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F19048B7-7B67-4EC1-80A7-1A97CEA67080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F19048B7-7B67-4EC1-80A7-1A97CEA67080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F19048B7-7B67-4EC1-80A7-1A97CEA67080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0270A106-1A5A-4E47-953C-983B52C4B49D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0270A106-1A5A-4E47-953C-983B52C4B49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0270A106-1A5A-4E47-953C-983B52C4B49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0270A106-1A5A-4E47-953C-983B52C4B49D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42C12E0B-BDD3-4B82-914F-0F8B62CEE630}
+	EndGlobalSection
+EndGlobal
