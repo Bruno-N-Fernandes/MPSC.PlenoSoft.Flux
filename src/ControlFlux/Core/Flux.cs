@@ -27,9 +27,9 @@ namespace MPSC.PlenoSoft.ControlFlux.Core
 			return Call("Do", description, step);
 		}
 
-		public IFlux If(String description, Func<FluxArg, Boolean> test)
+		public IFlux Validating(String description, Func<FluxArg, Boolean> test)
 		{
-			return Call("If", "(" + description + ")", fluxArg =>
+			return Call("Validating", "(" + description + ")", fluxArg =>
 				{
 					var result = (test?.Invoke(fluxArg)).GetValueOrDefault(false);
 					if (!result)

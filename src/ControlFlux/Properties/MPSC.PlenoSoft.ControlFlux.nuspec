@@ -16,7 +16,8 @@
         <summary>MPSC.PlenoSoft.ControlFlux</summary>
         <releaseNotes>
 			(Atual)
-			2019/06/23 - 1.0.0.1 -> Versão inicial;
+			2019/06/23 - 1.0.0.2 -> Changing the method name of 'If' to 'Validating' in Flux Class;
+			2019/06/23 - 1.0.0.1 -> Initial Version;
 		</releaseNotes>
         <copyright>Mercado Pleno Soluções em Computação</copyright>
         <language>pt-BR</language>

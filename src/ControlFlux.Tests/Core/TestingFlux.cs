@@ -15,11 +15,11 @@ namespace MPSC.PlenoSoft.ControlFlux.Tests.Core
 			Flux.To(out var fluxArg, "Make Any Thing")
 				.Do("With Lambda Expression To Action", fa => { /* Do Any Thing */ })
 				.Do("And Add  Integer Number Parameter", fa => fa.AddParam("IntegerNumber", 1))
-				.If("And Test Integer Number Parameter", fa => fa.Params.IntegerNumber == 1)
+				.Validating("And Test Integer Number Parameter", fa => fa.Params.IntegerNumber == 1)
 				.Do("And Add  DateTime Value Parameter", fa => fa.AddParam("DateTimeValue", DateTime.Today))
-				.If("And Test DateTime Value Parameter", fa => fa.Params.DateTimeValue == DateTime.Today)
+				.Validating("And Test DateTime Value Parameter", fa => fa.Params.DateTimeValue == DateTime.Today)
 				.Do("And Add  a String Value Parameter", fa => fa.AddParam("StringValue", "AEIOU"))
-				.If("And Test a String Value Parameter", fa => fa.Params.StringValue == "AEIOU")
+				.Validating("And Test a String Value Parameter", fa => fa.Params.StringValue == "AEIOU")
 				.Do("Return Success Message To Client", fa => fa.AddInformation("Ok"))
 			;
 

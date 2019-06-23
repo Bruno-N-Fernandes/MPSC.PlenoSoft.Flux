@@ -4,7 +4,9 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AssemblyName>MPSC.PlenoSoft.ControlFlux</AssemblyName>
     <RootNamespace>MPSC.PlenoSoft.ControlFlux</RootNamespace>
-    <Version>1.0.0.1</Version>
+    <Version>1.0.0.2</Version>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+    <FileVersion>1.0.0.2</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
