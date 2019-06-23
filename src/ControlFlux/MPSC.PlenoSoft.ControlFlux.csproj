@@ -4,16 +4,19 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AssemblyName>MPSC.PlenoSoft.ControlFlux</AssemblyName>
     <RootNamespace>MPSC.PlenoSoft.ControlFlux</RootNamespace>
+    <Version>1.0.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
+    <OutputPath>..\Bin\</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
+    <OutputPath>..\Bin\</OutputPath>
   </PropertyGroup>
 
 </Project>

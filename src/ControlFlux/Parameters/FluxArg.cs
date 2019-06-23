@@ -34,7 +34,7 @@ namespace MPSC.PlenoSoft.ControlFlux.Parameters
 
 		public void AddTrack(String description)
 		{
-			AddMessage(new Message { Description = description, FullDescription = (Status ? "Y - " : "N - ") + description, Type = MessageType.Track });
+			AddMessage(new Message { Description = description, FullDescription = (Status ? "OK" : "No"), Type = MessageType.Track });
 		}
 
 		public void AddValidation(String description, String fullDescription = null, Int64? messageCode = null)
@@ -53,10 +53,11 @@ namespace MPSC.PlenoSoft.ControlFlux.Parameters
 			return exception;
 		}
 
-		public void AddMessage(Message message)
+		public Message AddMessage(Message message)
 		{
 			_messages.Add(message);
 			Status &= !message.Type.In(MessageType.Exception, MessageType.Validation);
+			return message;
 		}
 
 		public void MergeFrom(FluxArg fluxArg)

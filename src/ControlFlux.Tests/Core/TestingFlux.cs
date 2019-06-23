@@ -52,7 +52,7 @@ namespace MPSC.PlenoSoft.ControlFlux.Tests.Core
 		private void ObterPessoaPorCPF(FluxArg fluxArg)
 		{
 			var cpf = (Int64)fluxArg.Params.CPF;
-			fluxArg.Params.Titular = new Pessoa();
+			fluxArg.Params.Titular = new Pessoa(cpf);
 		}
 
 		private void ObterDependente(FluxArg fluxArg)
@@ -76,7 +76,14 @@ namespace MPSC.PlenoSoft.ControlFlux.Tests.Core
 		}
 	}
 
-	public class Pessoa { }
-	public class Venda { }
+	public class Pessoa
+	{
+		private long cpf;
 
+		public Pessoa(long cpf = 0)
+		{
+			this.cpf = cpf;
+		}
+	}
+	public class Venda { }
 }
